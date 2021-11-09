@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/static/v1?label=Chernivtsi+National+University&color=blue)
+![GitHub](https://img.shields.io/static/v1?label=Organization&message=Chernivtsi+National+University&color=blue)
 ![GitHub](https://img.shields.io/static/v1?label=Plattform&message=Intel+SoC-FPGA&color=blue)
 ![GitHub](https://img.shields.io/static/v1?label=Yocto+Project+Releases&message=Warrior,Zeus,Dunfell,Gatesgarth&color=darkgreen)
 ![GitHub](https://img.shields.io/github/license/robseb/meta-intelfpga)
