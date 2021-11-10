@@ -85,12 +85,8 @@ It will generate a *Bitbake* recipe file. This file can easily via drag&drop ins
 ## Tested Development Machine Setup
 
 * **OS**
-	* **CentOS 7**
-	* **CentOS 8**
-	* **Ubuntu 18.04 LTS**
 	* **Ubuntu 20.04 LTS**
 * **Yocto Project Releases**
-	* **Zeus**    (*3.0*)
 	* **Dunfell** (*3.1*) (*recommended due to the best support of other meta-layers!*)
 	* **Gatesgarth** (*3.2*)
  <br>
@@ -121,38 +117,7 @@ The following step by step guide shows how to use this layer to build a Yocto-ba
         which SDL-devel xterm gmp-devel mpfr-devel libmpc-devel
         sudo pip3 install GitPython jinja2 
 		````
-    * (*Only for CentOS 7:*) Install *tar* Version *1.32* manually since only version *1.26* is available on *CentOS 7*
-        ````bash
-        cd ~ && wget  http://ftp.gnu.org/gnu/tar/tar-1.32.tar.gz
-        tar xf tar-1.32.tar.gz && cd tar-1.32
-        ./configure
-        sudo make && sudo make install
-        cd .. && sudo rm -r tar-1.32.tar.gz 
-        ````
-		* Check your *tar* version
-		````bash
-		tar --version
-		````
-      
-	 * (*Only for CentOS 7:*) Install the latest *git* version to prevent error with bitbake
-        ````bash
-        sudo yum remove git*
-        sudo yum -y install https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.7-1.x86_64.rpm
-		sudo yum install -y git
-        ````
-      
-		* Check your *git* version (*it should be 2.24+*)
-		````bash
-		git --version
-		````
-	 * (*Only for CentOS 7:*) Install a later version of the *gcc* compiler
-        ````bash
-		wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-9.3.0/gcc-9.3.0.tar.gz
-		tar zxf gcc-9.3.0.tar.gz
-		mkdir gcc-9.3.0-build && cd gcc-9.3.0-build
-		../gcc-9.3.0/configure --enable-languages=c,c++ --disable-multilib
-		make -j$(nproc)
-        ````
+    
         * Check your *gcc* version (*it should be 9.3.0*)
             ````bash
             gcc --version
