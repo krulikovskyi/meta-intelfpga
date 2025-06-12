@@ -5,9 +5,9 @@ DESCRIPTION = "Tool to remove via the Intel FPGA Manager the FPGA Fabric configu
 SECTION = "rstools" 
 LICENSE = "MIT"
 PR = "r0"
-BRANCH ="main"
+BRANCH ="master"
 LIC_FILES_CHKSUM = "file://CHECKSUMFILE;md5=bff2b7959c4b3958a8ae19f6a39a59ac"
-SRC_URI = "gitsm://github.com/robseb/rstools.git;protocol=https;branch=${BRANCH}"
+SRC_URI = "gitsm://github.com/thburghout/rstoolsCY5.git;protocol=https;branch=${BRANCH}"
 SRCREV = "${AUTOREV}"
 # use  git rev-parse HEAD to update
 
