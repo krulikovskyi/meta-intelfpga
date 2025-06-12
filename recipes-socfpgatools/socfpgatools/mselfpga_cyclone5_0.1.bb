@@ -7,7 +7,7 @@ LICENSE = "MIT"
 PR = "r0"
 BRANCH ="master"
 LIC_FILES_CHKSUM = "file://CHECKSUMFILE;md5=bff2b7959c4b3958a8ae19f6a39a59ac"
-SRC_URI = "git://github.com/robseb/rstoolsCY5.git;branch=${BRANCH};protocol=https;"
+SRC_URI = "git://github.com/krulikovskyi/rstoolsCY5.git;branch=${BRANCH};protocol=https;"
 SRCREV = "${AUTOREV}" 
 # use  git rev-parse HEAD to update
 
@@ -23,5 +23,4 @@ do_install() {
     install -d ${D}${bindir}
     install -m 0755 FPGA-readMSEL ${D}${bindir}
 }
-
 
